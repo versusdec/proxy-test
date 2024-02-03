@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42rem;
+    list-style: none outside none;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+}
+
+body, html {
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #DFE1E6;
+    border-radius: 2px;
+}
+
+input {
+    background-color: transparent;
+    border: 0;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+main {
+    padding: 30px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+nav input {
+    height: 32px;
+    border: 1px solid #DFE1E6;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+button.sort {
+    padding: 5px;
+    height: 32px;
+    width: 32px;
+}
+
+button.sort img {
+    width: 20px;
+}
+
+.sort-wrap {
+    display: flex;
+    gap: 10px;
+}
+
+.sort-wrap .active img {
+    filter: invert(40%) sepia(43%) saturate(5469%) hue-rotate(227deg) brightness(101%) contrast(89%);
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+td, th {
+    padding: 10px 15px;
+}
+
+th {
+    font-weight: 600;
+}
+
+table {
+    border: 1px solid #DFE1E6;
+    border-radius: 5px;
+}
+
+thead tr {
+    background: #DFE1E6;
+}
+
+tbody tr {
+    background-color: rgba(223, 225, 230, 0.1);
+}
+
+tbody tr:nth-child(2n) {
+    background-color: rgba(223, 225, 230, 0.3);
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+}
+
+.actions a {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+.actions a:hover {
+    filter: invert(40%) sepia(43%) saturate(5469%) hue-rotate(227deg) brightness(101%) contrast(89%);
+}
+
+.actions img {
+    width: 20px;
+    height: 20px;
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    text-transform: uppercase;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.back img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.posts .item {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DFE1E6;
+}
+
+.posts .item:hover h3 {
+    color: #6366F1;
+}
+
+.posts .item h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.posts.albums h3 {
+    margin-bottom: 0;
+}
+
+.posts.albums {
+    gap: 10px;
+}
+
+.posts.albums .item {
+    padding-bottom: 10px;
+}
